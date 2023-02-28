@@ -1,0 +1,179 @@
+:root {
+    --pmry-clr:rgba(130, 190, 190, 0.84);
+    --scnd-clr:rgba(5, 206, 206, 0.601);
+    --lnr-clr-1:rgba(2, 84, 84, 0.356);
+    --lnr-clr-2:rgb(6, 140, 140);
+    --lnr-clr-3:rgb(115, 230, 230);
+    --txt-shdw:rgb(1, 31, 31);
+    --box-shdw:rgb(57, 53, 53);
+    --btn-1:rgb(35, 193, 106);
+    --btn-2:rgb(21, 88, 181);
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--pmry-clr);
+}
+
+body, input, button {
+    font-family: 'Open Sans', sans-serif;
+}
+
+input, button {
+    font-size: 16px;
+}
+
+.head_bar {
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:linear-gradient(to left, var(--lnr-clr-1), var(--lnr-clr-2),var(--lnr-clr-3), var(--lnr-clr-1), var(--lnr-clr-2));
+    color: white;
+    text-shadow: 0 0 15px var(--txt-shdw);
+    box-shadow: 0 5px 10px var(--box-shdw);
+}
+
+main {
+    max-width: 800px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 16px;
+
+}
+
+.input_section {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    background-color: var(--scnd-clr);
+    border: 0 solid black;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px var(--box-shdw);
+}
+
+.input_section > h2 {
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 15px rgb(1, 31, 31);
+}
+
+.input_section > form > .input {
+    margin: 8px 0;
+}
+
+.input_section > form > button {
+    
+    background:linear-gradient(to left, var(--lnr-clr-1), var(--lnr-clr-2), var(--lnr-clr-1),var(--lnr-clr-3), var(--lnr-clr-1), var(--lnr-clr-2),var(--lnr-clr-1));
+    color: white;
+    text-shadow: 0 0 15px var(--txt-shdw);
+    box-shadow: inset 0 -1px 5px var(--box-shdw);
+    border: 0;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.input_section > form > button > span {
+    font-weight: bold;
+}
+
+.input_section > form > .input > input {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    background-color: transparent;
+    border-bottom: 2px solid var(--btn-1);
+}
+
+.input_section > form > .input > input:focus {
+    outline: none;
+    border-bottom:none;
+    background-color: var(--lnr-clr-1);
+    border-radius: 5px;
+    color: white;
+    box-shadow: inset 0 -1px 5px var(--box-shdw);
+}
+
+
+.input_section > form > .input > label {
+    color: white;
+    text-shadow: 0 0 15px var(--txt-shdw);
+    font-weight: bold;
+}
+
+.input_section > form > .input_inline {
+    margin: 12px 0;
+    display: flex;
+    align-items: center;
+}
+
+.input_section > form > .input_inline > label {
+    color: white;
+    text-shadow: 0 0 15px var(--txt-shdw);
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+
+
+.book_shelf {
+    margin: 16px 0 0 0;
+    border: 1px solid var(--scnd-clr);
+    background:linear-gradient(to left,var(--lnr-clr-3),var(--lnr-clr-2),var(--lnr-clr-3));
+    box-shadow: 0 5px 15px var(--box-shdw);
+    padding: 16px;
+    border-radius: 10px;
+}
+
+.book_shelf > h2 {
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 15px var(--txt-shdw);
+}
+
+.book_shelf > .book_list {
+    padding: 16px;
+}
+
+.book_shelf > .book_list > .book_item {
+    padding: 8px 16px 16px 16px;
+    border: 1px solid var(--pmry-clr);
+    background-color: var(--lnr-clr-2);
+    box-shadow: 0 0 11px var(--box-shdw);
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.book_shelf > .book_list > .book_item > h3, p {
+    margin: 8px 0;
+}
+
+.book_shelf > .book_list > .book_item > .action > button {
+    border: 0;
+    padding: 5px;
+    margin: 0 5px 0 0;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: inset 0 5px 15px var(--box-shdw);
+}
+
+.book_shelf > .book_list > .book_item > .action > .btn-1 {
+    background-color: var(--btn-1);
+    color: white;
+    text-shadow: 0 0 15px var(--txt-shdw);
+}
+
+.book_shelf > .book_list > .book_item > .action > .btn-2 {
+    background-color: var(--btn-2);
+    color: white;
+    text-shadow: 0 0 15px var(--txt-shdw);
+}
