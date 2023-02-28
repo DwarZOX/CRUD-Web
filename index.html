@@ -1,61 +1,48 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Bookshelf Apps</title>
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
-        rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="4; url=./content/index.html">
+    <title>Redirect to DwarzDev Project..</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            margin: auto;
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+        .load {
+            border: 12px solid rgb(17, 124, 110);
+            border-radius: 50%;
+            border-top: 12px solid white;
+            width: 100px;
+            height: 100px;
+            animation: putar 0.9s linear infinite;
+            margin: 0 auto;
+        }
+
+        @keyframes putar {
+            0% {transform: rotate(0deg);}
+            100% {transform: rotate(360deg);}
+        }
+    </style>
 </head>
 <body>
-<header class="head_bar">
-  <h1 class="head_bar__title">Bookshelf Apps</h1>
-</header>
-<main>
-  <section class="input_section">
-    <h2>Enter New Book</h2>
-    <form id="inputBook">
-      <div class="input">
-        <label for="inputBookTitle">Title</label>
-        <input id="inputBookTitle" type="text" required>
-      </div>
-      <div class="input">
-        <label for="inputBookAuthor">Author</label>
-        <input id="inputBookAuthor" type="text" required>
-      </div>
-      <div class="input">
-        <label for="inputBookYear">Year</label>
-        <input id="inputBookYear" type="number" required>
-      </div>
-      <div class="input_inline">
-        <label for="inputBookIsComplete">Finish Read</label>
-        <input id="inputBookIsComplete" type="checkbox" onclick="isChecked()">
-      </div>
-      <button id="bookSubmit" type="submit">Enter book to Shelf <span id="option">Not Finish Read yet</span></button>
-    </form>
-  </section>
- 
-  
-  <section class="book_shelf">
-    <h2>Not Finish Read yet</h2>
-    
-    <div id="incompleteBookshelfList" class="book_list">
+    <div class="container">
+        <h4>Redirect to DwarzDev Project</h4>
+        <div class="load"></div>
+        <p>Loading..</p>
     </div>
-  </section>
-  
-  <section class="book_shelf">
-    <h2>Finish Read</h2>
-    
-    <div id="completeBookshelfList" class="book_list">
-    </div>
-  </section>
-</main>
-
-<script src="main.js"></script>
-
 </body>
 </html>
